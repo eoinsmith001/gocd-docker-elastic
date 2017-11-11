@@ -8,4 +8,5 @@ See: https://github.com/gocd-contrib/docker-elastic-agents#usage-instructions
 
 ## Usage
 
+* `./getElasticAgentPlugin.sh` (no sense in keeping the JAR in git)
 * `docker-compose up -d`
