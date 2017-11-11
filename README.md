@@ -10,3 +10,4 @@ See: https://github.com/gocd-contrib/docker-elastic-agents#usage-instructions
 
 * `./getElasticAgentPlugin.sh` (no sense in keeping the JAR in git)
 * `docker-compose up -d`
+* GOTO http://localhost:8153
