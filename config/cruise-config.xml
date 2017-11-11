@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cruise xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cruise-config.xsd" schemaVersion="97">
+  <server artifactsdir="artifacts" agentAutoRegisterKey="e8b709e1-bf41-49c7-8289-05a52e9200d6" webhookSecret="7313c33f-c4c1-4e93-b3ec-fc7f9eade071" commandRepositoryLocation="default" serverId="1af1a41f-0b77-492a-8750-d024cb47ba2d">
+    <elastic>
+      <profiles>
+        <profile id="docker.unit-tests" pluginId="cd.go.contrib.elastic-agent.docker">
+          <property>
+            <key>Image</key>
+            <value>alpine</value>
+          </property>
+          <property>
+            <key>Environment</key>
+            <value>JAVA_HOME=/opt/java
+            MAKE_OPTS=-j8</value>
+          </property>
+          <property>
+            <key>Command</key>
+            <value>ls
+            -al
+            /usr/bin</value>
+          </property>
+        </profile>
+      </profiles>
+    </elastic>
+  </server>
+</cruise>
